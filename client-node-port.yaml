@@ -7,8 +7,8 @@ metadata:
 spec:
   type: NodePort # One among the types of Node
   ports:
-    - ports: 3050
-      targetPort: 3000
-      nodePort: 31515
+    - ports: 3050 # Use for other apps to connect to this application
+      targetPort: 3000 # The traffic enters into tis port
+      nodePort: 31515 # use for displaying the application on our local browser
   selector:
     component: web # referencing the pod name web

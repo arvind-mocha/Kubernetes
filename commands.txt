@@ -1,0 +1,11 @@
+kubectl apply -f <filename> => command to load our config file into minikube
+
+kubectl get pods => command to get the running pods
+
+kubectl get services => command to get the running services
+
+kubectl delete pods <pod name> => command to delete a pod
+
+kubectl delete services <pod name> => command to delete a service
+
+minikube ip => command to get ip address of minikube VM. only way to disply the website in our local browser
