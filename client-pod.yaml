@@ -1,6 +1,6 @@
 # Pod is like a single container
 
-appVersion: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: client-pod
