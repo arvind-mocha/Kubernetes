@@ -1,0 +1,17 @@
+# Pod is like a single container
+
+appVersion: v1
+kind: Pod
+metadata:
+  name: client-pod
+  labels:
+    # name of this pod used for reference purpose.
+    # We can call it anything like podname: web or pod: frontend. but this must be the same when referencing
+    component: web
+
+spec:
+  containers:
+    - name: client
+      image: stephengrider/multi-client
+      ports:
+        - containerPort: 3000

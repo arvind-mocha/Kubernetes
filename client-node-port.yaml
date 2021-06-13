@@ -1,0 +1,14 @@
+# In kubernetes we need to manually map the ports
+
+apiVersion: v1
+kind: Service # There are four types of services
+metadata:
+  name: client-node-port
+spec:
+  type: NodePort # One among the types of Node
+  ports:
+    - ports: 3050
+      targetPort: 3000
+      nodePort: 31515
+  selector:
+    component: web # referencing the pod name web
